@@ -42,7 +42,7 @@ window.addEventListener('click', function(event) {
             toggleCartStatus();
 
             // Запускаем пересчет общей стоимости в корзине
-            calcCartPrice()
+            calcCartPriceAndDelivery()
         }
 
     }
@@ -50,6 +50,6 @@ window.addEventListener('click', function(event) {
     // Проверяем клик на + или - внутри корзины
     if (event.target.hasAttribute('data-action') && event.target.closest('.cart-wrapper')) {
         // Запускаем пересчет общей стоимости в корзине
-        calcCartPrice();
+        calcCartPriceAndDelivery();
     }
 });
